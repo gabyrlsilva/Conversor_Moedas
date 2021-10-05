@@ -1,7 +1,5 @@
-import 'dart:math';
-
-import 'package:Conversor_de_Moedas/app/controllers/home_controller.dart';
-import 'package:Conversor_de_Moedas/app/models/currency_model.dart';
+import 'package:Conversor_Moedas/app/controllers/home_controller.dart';
+import 'package:Conversor_Moedas/app/models/currency_model.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 

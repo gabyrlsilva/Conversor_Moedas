@@ -1,6 +1,4 @@
-import 'dart:async';
-
-import 'package:Conversor_de_Moedas/app/models/currency_model.dart';
+import 'package:Conversor_Moedas/app/models/currency_model.dart';
 import 'package:flutter/material.dart';
 
 class CurrencyBox extends StatelessWidget {
@@ -22,6 +20,7 @@ class CurrencyBox extends StatelessWidget {
           child: SizedBox(
             height: 56,
             child: DropdownButton<CurrencyModel>(
+              style: TextStyle(color: Colors.white, fontSize: 20),
               iconEnabledColor: Colors.amber,
               isExpanded: true,
               value: selectedItem,
@@ -42,6 +41,7 @@ class CurrencyBox extends StatelessWidget {
         Expanded(
           flex: 2,
           child: TextField(
+            style: TextStyle(color: Colors.white, fontSize: 20),
             controller: controller,
             decoration: InputDecoration(
                 enabledBorder: UnderlineInputBorder(

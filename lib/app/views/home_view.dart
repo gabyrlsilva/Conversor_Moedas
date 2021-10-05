@@ -1,5 +1,5 @@
-import 'package:Conversor_de_Moedas/app/components/currency_box.dart';
-import 'package:Conversor_de_Moedas/app/controllers/home_controller.dart';
+import 'package:Conversor_Moedas/app/components/currency_box.dart';
+import 'package:Conversor_Moedas/app/controllers/home_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 
@@ -23,17 +23,18 @@ class _HomeViewState extends State<HomeView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.black,
       body: SizedBox(
         width: MediaQuery.of(context).size.width,
         height: MediaQuery.of(context).size.height,
         child: Padding(
-          padding: EdgeInsets.only(left: 30, right: 30, top: 100, bottom: 20),
+          padding: EdgeInsets.only(left: 30, right: 30, top: 30, bottom: 20),
           child: Column(
             children: [
               Image.asset(
-                'assets/moedas.png',
-                width: 150,
-                height: 150,
+                'assets/moeda.jpg',
+                width: 220,
+                height: 220,
               ),
               SizedBox(height: 50),
               CurrencyBox(
@@ -60,6 +61,7 @@ class _HomeViewState extends State<HomeView> {
               SizedBox(height: 50),
               RaisedButton(
                 color: Colors.amber,
+                textColor: Colors.white,
                 onPressed: () {
                   homeController.convert();
                 },
